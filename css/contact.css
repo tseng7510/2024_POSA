@@ -1,0 +1,370 @@
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.bg::after {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 80vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+  /*animation: pulsate2 3s linear infinite;*/
+}
+.bg::before {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 50vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+}
+
+.bg .dot{
+  position: absolute;
+  inset: 0;
+}
+.bg .dot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #1FA7F1;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.bg .dot::after {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 20vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+}
+
+.contact .mainBox {
+  padding-bottom: 0;
+}
+.contact .container .notice {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto clamp(30px, 5%, 50px);
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  .contact .container .notice {
+    font-size: 1rem;
+  }
+}
+.contact .container .listBox {
+  margin-bottom: clamp(30px, 5%, 50px);
+}
+.contact .container .listBox .item a {
+  display: flex;
+  gap: 20px;
+  border: #5052AD 1px solid;
+}
+@media screen and (max-width: 1000px) {
+  .contact .container .listBox .item a {
+    flex-direction: column;
+  }
+}
+.contact .container .listBox .item .titleF {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #262C78;
+  color: #FFF;
+  font-weight: 700;
+}
+.contact .container .listBox .item .pic {
+  padding: 20px 30px;
+}
+@media screen and (max-width: 1000px) {
+  .contact .container .listBox .item .pic {
+    margin: 0 auto;
+  }
+}
+.contact .container .listBox .item .pic img {
+  max-width: 142px;
+}
+.contact .container .listBox .item .infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.contact .container .listBox .item .subTitle {
+  font-size: 0.875rem;
+  color: #262C78;
+  font-weight: 700;
+}
+.contact .container .listBox .item .title {
+  font-weight: 700;
+  font-size: 3.1875rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1000px) {
+  .contact .container .listBox .item .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .container .listBox .item .title {
+    font-size: 1.875rem;
+  }
+}
+.contact .container .listBox .item .del {
+  width: 76px;
+  border: #262C78 1px solid;
+  aspect-ratio: 1;
+  align-self: center;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 30px 0 auto;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .contact .container .listBox .item .del {
+    margin: 30px auto;
+  }
+}
+.contact .container .listBox .item .del::before, .contact .container .listBox .item .del::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #262C78;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+.contact .container .listBox .item .del::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.contact .container .listBox .item .del:hover {
+  background: #262C78;
+}
+.contact .container .listBox .item .del:hover::before, .contact .container .listBox .item .del:hover::after {
+  background: #FFF;
+}
+.contact .contentBox {
+  position: relative;
+  z-index: 20;
+  isolation: isolate;
+}
+.contact .contentBox::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, rgb(236, 28, 36) 0%, rgb(38, 44, 120) 100%);
+  display: block;
+}
+.contact .contentBox .contentBg {
+  position: absolute;
+  height: 500px;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
+          mask: linear-gradient(to bottom, #000 50%, transparent);
+  z-index: -1;
+}
+.contact .contentBox .contentBg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0 20px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+}
+.contact .formBox {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 7% 30px;
+}
+@media screen and (max-width: 1000px) {
+  .contact .formBox {
+    padding: 7% 30px 80px;
+  }
+}
+.contact .formBox ul {
+  margin: 0 auto clamp(30px, 10%, 80px);
+}
+.contact .pageBtnBox {
+  padding-top: 0;
+}
+.contact .bottomBox {
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .contact .bottomBox {
+    flex-direction: column;
+  }
+}
+.contact .bottomBox .infoBox {
+  width: 50%;
+  background: url("../images/in/contact_bg.jpg") center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .contact .bottomBox .infoBox {
+    width: 100%;
+  }
+}
+.contact .bottomBox .infoBox .info {
+  width: 100%;
+  max-width: 790px;
+  margin: 0 0 0 auto;
+  padding: 75px 0 75px 90px;
+}
+@media screen and (max-width: 1000px) {
+  .contact .bottomBox .infoBox .info {
+    padding: 50px 0 50px 30px;
+  }
+}
+.contact .bottomBox .infoBox .title {
+  color: #FFF;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .contact .bottomBox .infoBox .title {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact .bottomBox .infoBox .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .bottomBox .infoBox .title {
+    font-size: 1.75rem;
+  }
+}
+.contact .bottomBox .infoBox ul {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .bottomBox .infoBox ul li {
+  font-size: 1.125rem;
+  color: #FFF;
+  display: flex;
+}
+.contact .bottomBox .infoBox ul li span {
+  display: block;
+  width: 80px;
+  color: #fff;
+  font-weight: 700;
+}
+.contact .bottomBox .infoBox ul li a {
+  color: #FFF;
+}
+.contact .bottomBox .map {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .contact .bottomBox .map {
+    width: 100%;
+    height: 300px;
+  }
+}
+.contact .bottomBox .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contactOk {
+  text-align: center;
+}
+.contactOk .title {
+  max-width: 570px;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .contactOk .title {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactOk .title {
+    font-size: 1.5rem;
+  }
+}
+.contactOk .unitTitleBox .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 5px;
+  transform: translateX(-50%);
+  display: block;
+  background: #FF290B;
+}
+.contactOk .txt {
+  color: #333333;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 1000px) {
+  .contactOk .txt {
+    font-size: 1rem;
+  }
+}
+.contactOk .subTitle {
+  color: #262C78;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: clamp(20px, 5%, 50px);
+}
+@media screen and (max-width: 1000px) {
+  .contactOk .subTitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactOk .subTitle {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,225 @@
+@media screen and (max-width: 767px) {
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  .siteMain {
+    flex-grow: 1;
+  }
+  .mainBox {
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainBox section {
+    width: 100%;
+  }
+}
+.worldwide {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+}
+.worldwide::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background: url('../images/in/news_bg.jpg') center bottom no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.wordMap {
+  position: relative;
+  isolation: isolate;
+}
+.wordMap .target {
+  position: absolute;
+  z-index: 9;
+  inset: 0;
+}
+.wordMap .item {
+  position: absolute;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  .wordMap .item {
+    font-size: 0.75rem;
+  }
+}
+.wordMap .item:nth-child(1) {
+  top: 24%;
+  left: 11%;
+}
+.wordMap .item:nth-child(2) {
+  top: 35%;
+  left: 52%;
+}
+@media screen and (max-width: 575px) {
+  .wordMap .item:nth-child(2) {
+    top: 32%;
+    left: 48%;
+  }
+}
+.wordMap .item:nth-child(3) {
+  top: 33%;
+  left: 75%;
+}
+@media screen and (max-width: 575px) {
+  .wordMap .item:nth-child(3) {
+    left: auto;
+    top: 27%;
+    right: 15%;
+    text-align: right;
+  }
+  .wordMap .item:nth-child(3) i {
+    order: 3;
+  }
+}
+.wordMap .item:nth-child(4) {
+  color: #ff290b;
+  top: 50%;
+  left: 80%;
+}
+@media screen and (max-width: 575px) {
+  .wordMap .item:nth-child(4) {
+    top: 46%;
+    left: 78%;
+  }
+}
+.wordMap .item:nth-child(4) i {
+  background: #ff290b;
+}
+.wordMap .item:nth-child(4) i::before {
+  background: #ff290b;
+}
+.wordMap .item:nth-child(5) {
+  top: 55%;
+  left: 48%;
+}
+.wordMap .item:nth-child(6) {
+  top: 72%;
+  left: 32%;
+}
+@media screen and (max-width: 575px) {
+  .wordMap .item:nth-child(6) {
+    top: 67%;
+    left: 28%;
+  }
+}
+.wordMap .item:nth-child(7) {
+  top: 75%;
+  left: 83%;
+}
+@media screen and (max-width: 575px) {
+  .wordMap .item:nth-child(7) {
+    left: auto;
+    right: 10%;
+    text-align: right;
+  }
+  .wordMap .item:nth-child(7) i {
+    order: 3;
+  }
+}
+.wordMap .item.active {
+  z-index: 9;
+}
+.wordMap .item.active .slide {
+  background: #07a7f3;
+}
+.wordMap button {
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  background: none;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .wordMap button {
+    font-size: 0.8125rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .wordMap button {
+    font-size: 0.75rem;
+  }
+}
+.wordMap button i {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: block;
+  background: #262c78;
+  margin: 2px 10px 0;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .wordMap button i {
+    width: 10px;
+    height: 10px;
+    margin: 6px 5px 0;
+  }
+}
+.wordMap button i::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: block;
+  background: #07a7f3;
+  position: absolute;
+  animation: pulsate 2s linear infinite;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .wordMap button i::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+.wordMap button .slide {
+  font-size: 1.125rem;
+  padding: 10px;
+  margin-top: -10px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1000px) {
+  .wordMap button .slide {
+    font-size: 0.75rem;
+  }
+}
+.wordMap button ul {
+  color: #fff;
+  font-weight: 400;
+  display: none;
+  padding: 5px 0;
+}
+.wordMap button ul li {
+  padding: 2px 0;
+}
+
+@keyframes pulsate {
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  90% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+} /*# sourceMappingURL=worldwide.css.map */

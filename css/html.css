@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.bg::after {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 80vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+  /*animation: pulsate2 3s linear infinite;*/
+}
+.bg::before {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 50vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+}
+
+.bg .dot{
+  position: absolute;
+  inset: 0;
+}
+.bg .dot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #1FA7F1;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.bg .dot::after {
+  content: "";
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #1FA7F1;
+  opacity: 0.1;
+  width: 20vw;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+}
+
+.html .editor {
+  max-width: 1150px;
+  margin: 0 auto;
+  color: #000;
+  font-size: 1.3125rem;
+  line-height: 1.45;
+}
+@media screen and (max-width: 1000px) {
+  .html .editor {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .html .editor {
+    font-size: 1rem;
+  }
+}
+.html .editor ul.style li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+.html .editor ul.style li::before {
+  content: "◆";
+  color: #262C78;
+  position: absolute;
+  left: 0;
+}
+
+.editor span.title {
+  color: #262C78;
+  font-weight: 700;
+}/*# sourceMappingURL=html.css.map */
