@@ -65,6 +65,7 @@
                     <a class="prev arrows" href="news_detail.php">Previous</a>
                     <a class="next arrows" href="news_detail.php">Next</a>
                   </div>
+                  <time datetime="">2024.06.15</time>
                   <h1 class="title wow fadeInUp" data-wow-delay="0s">The MM1552B High speed and compact through-hole rotary hydraulic</h1>
                 </div>
               </div>

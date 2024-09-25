@@ -66,6 +66,7 @@
                       <div class="pic"><img src="../images/in/news.jpg" alt=""></div>
                       <div class="infoBox">
                         <div class="info">
+                          <time datetime="">2024.06.15</time>
                           <h2 class="title">POSA’s “High Efficiency Smart Spindle PGM Series” won the 2023 Taiwan Excellence Award!</h2>
                           <div class="description">POSA’s is not only the only company in the precision spindle industry to win the Taiwan Excellence Award, but it has also won the award for the second time!</div>
                         </div>
