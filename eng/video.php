@@ -97,6 +97,12 @@
   </div>
   <?php include('include_body_bottom.php'); ?>
 
+  <script>
+    $(function() {
+      $('.navBox li').eq(2).addClass('active');
+      $('.mainMenu > ul > li').eq(2).addClass('nowPage');
+    })
+  </script>
 </body>
 
 </html>

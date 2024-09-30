@@ -4,13 +4,13 @@
   z-index: -1;
 }
 .bg::after {
-  content: "";
+  content: '';
   transform: translate(-50%, 50%);
   bottom: 0;
   left: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 80vw;
   aspect-ratio: 1;
@@ -19,13 +19,13 @@
   /*animation: pulsate2 3s linear infinite;*/
 }
 .bg::before {
-  content: "";
+  content: '';
   transform: translate(-50%, 50%);
   bottom: 0;
   left: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 50vw;
   aspect-ratio: 1;
@@ -33,31 +33,31 @@
   border-radius: 50%;
 }
 
-.bg .dot{
+.bg .dot {
   position: absolute;
   inset: 0;
 }
 .bg .dot::before {
-  content: "";
+  content: '';
   position: absolute;
   transform: translate(-50%, 50%);
   bottom: 0;
   left: 0;
   width: 40px;
   height: 40px;
-  background: #1FA7F1;
+  background: #1fa7f1;
   border-radius: 50%;
   filter: blur(10px);
 }
 
 .bg .dot::after {
-  content: "";
+  content: '';
   transform: translate(-50%, 50%);
   bottom: 0;
   left: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 20vw;
   aspect-ratio: 1;
@@ -70,13 +70,13 @@
   position: relative;
 }
 .application .mainBox::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100vh;
   display: block;
   top: 0;
-  background: url("../images/in/products_bg.jpg") center top no-repeat;
+  background: url('../images/in/products_bg.jpg') center top no-repeat;
   background-size: cover;
   z-index: -2;
 }
@@ -90,37 +90,37 @@
 }
 .application .changePage a {
   width: 126px;
-  color: #262C78;
+  color: #262c78;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px 15px;
   border-radius: 50px;
-  border: #262C78 1px solid;
+  border: #262c78 1px solid;
   position: relative;
   overflow: hidden;
   isolation: isolate;
 }
 .application .changePage a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   right: 0;
   top: 0;
   bottom: 0;
   display: block;
-  background: #262C78;
+  background: #262c78;
   z-index: -1;
   transition: all 0.3s ease;
 }
 .application .changePage a::after {
-  content: "";
+  content: '';
   width: 15px;
   height: 15px;
   display: block;
-  -webkit-mask: url("../images/icon/icon_ar.svg") center no-repeat;
-          mask: url("../images/icon/icon_ar.svg") center no-repeat;
-  background: #262C78;
+  -webkit-mask: url('../images/icon/icon_ar.svg') center no-repeat;
+  mask: url('../images/icon/icon_ar.svg') center no-repeat;
+  background: #262c78;
   transition: all 0.3s ease;
   margin: 0 0 0 10px;
 }
@@ -130,14 +130,14 @@
   margin: 0 10px 0 0;
 }
 .application .changePage a:hover {
-  color: #FFF;
+  color: #fff;
 }
 .application .changePage a:hover::before {
   width: 100%;
   left: 0;
 }
 .application .changePage a:hover::after {
-  background: #FFF;
+  background: #fff;
 }
 .application .topBox {
   position: relative;
@@ -145,7 +145,7 @@
   padding-bottom: 5%;
 }
 .application .topBox::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
@@ -193,12 +193,12 @@
   }
 }
 .application .topBox .picBox::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   display: block;
-  background: url("../images/in/pbg2.svg") center no-repeat;
+  background: url('../images/in/pbg2.svg') center no-repeat;
   z-index: -1;
   animation: rotate360 20s infinite linear;
 }
@@ -208,7 +208,7 @@
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  background: #FFF;
+  background: #fff;
 }
 .application .infoBox {
   width: calc(46% - 20px);
@@ -248,14 +248,14 @@
   }
 }
 .application .infoBox .title::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 60px;
   height: 5px;
   display: block;
-  background: #FF290B;
+  background: #ff290b;
 }
 .application .infoBox .description {
   color: #444444;
@@ -289,7 +289,7 @@
   }
 }
 .application .bottomBox .blockTitle span {
-  color: #262C78;
+  color: #262c78;
 }
 .application .listBox {
   display: flex;
@@ -305,11 +305,14 @@
     gap: 30px;
   }
 }
+.application .listBox .slick-list {
+  width: 100%;
+}
 .application .listBox .item {
   padding: 50px 19px;
 }
 .application .listBox a:hover .picBox {
-  border-color: #8086D7;
+  border-color: #8086d7;
 }
 .application .listBox a:hover .picBox::before {
   opacity: 0.2;
@@ -322,8 +325,8 @@
   aspect-ratio: 1;
   border-radius: 30px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-  border: 2px solid #FFF;
-  background: #FFF;
+  border: 2px solid #fff;
+  background: #fff;
   transition: all 0.3s ease;
   position: relative;
   isolation: isolate;
@@ -332,11 +335,11 @@
   justify-content: center;
 }
 .application .listBox .picBox::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: #C4C8F0;
+  background: #c4c8f0;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -349,9 +352,9 @@
   max-width: 260px;
   font-size: 1.5rem;
   width: 100%;
-  background: #262C78;
+  background: #262c78;
   border-radius: 50px;
-  color: #FFF;
+  color: #fff;
   padding: 10px 10px;
   margin: 0 auto;
   transform: translateY(-50%);
@@ -371,7 +374,7 @@
   }
 }
 .application .listBox .title::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   width: 100%;
@@ -388,7 +391,7 @@
   overflow: hidden;
   color: transparent;
   border-radius: 50%;
-  border: #262C78 1px solid;
+  border: #262c78 1px solid;
   transition: all 0.3s ease;
   position: absolute;
   top: 45%;
@@ -397,10 +400,10 @@
   z-index: 9;
 }
 .application .slick-arrow::before {
-  content: "";
-  -webkit-mask: url("../images/icon/icon_ar.svg") no-repeat center;
-          mask: url("../images/icon/icon_ar.svg") no-repeat center;
-  background: #262C78;
+  content: '';
+  -webkit-mask: url('../images/icon/icon_ar.svg') no-repeat center;
+  mask: url('../images/icon/icon_ar.svg') no-repeat center;
+  background: #262c78;
   width: 12px;
   height: 15px;
   display: block;
@@ -418,8 +421,8 @@
   transform: translate(-50%, -50%) scaleX(-1);
 }
 .application .slick-arrow:hover {
-  background: #262C78;
+  background: #262c78;
 }
 .application .slick-arrow:hover::before {
-  background: #FFF;
-}/*# sourceMappingURL=application.css.map */
+  background: #fff;
+} /*# sourceMappingURL=application.css.map */

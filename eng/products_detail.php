@@ -101,7 +101,7 @@
   <?php include('include_body_bottom.php'); ?>
   <script>
     $(function() {
-      $('.mainMenu > ul > li').eq(0).addClass('active');
+      $('.mainMenu > ul > li').eq(0).addClass('nowPage');
 
       $('.mainBox .listBox').slick({
         arrows: false,

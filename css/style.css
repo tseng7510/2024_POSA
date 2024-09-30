@@ -530,7 +530,7 @@ button:focus {
   text-align: center;
 }
 .privacyBox a {
-  color: #262c78;
+  color: #ff290b;
 }
 .privacyBox .closePrivacy {
   right: 12px;
@@ -552,6 +552,12 @@ button:focus {
   line-height: 1.6;
   color: #444444;
   font-size: 1.125rem;
+}
+.editor a {
+  color: #7a83ff;
+}
+.editor a:hover {
+  color: #ff290b;
 }
 @media screen and (max-width: 1000px) {
   .editor {
@@ -1265,6 +1271,8 @@ button:focus {
 .menuBox .mainMenu > ul > li.active > button::before {
   width: 100%;
 }
+.menuBox .mainMenu > ul > li.nowPage > a::before,
+.menuBox .mainMenu > ul > li.nowPage > button::before,
 .menuBox .mainMenu > ul > li.active > a::before,
 .menuBox .mainMenu > ul > li.active > button::before {
   width: 100%;

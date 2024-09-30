@@ -132,7 +132,7 @@
           }
         ]
       });
-      $('.mainMenu > ul > li').eq(1).addClass('active');
+      $('.mainMenu > ul > li').eq(1).addClass('nowPage');
     });
   </script>
 </body>

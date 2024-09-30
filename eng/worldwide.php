@@ -134,6 +134,10 @@
   <?php include('include_body_bottom.php'); ?>
 
   <script>
+    $(function() {
+      $('.mainMenu > ul > li').eq(4).addClass('nowPage');
+    })
+
     function init() {
       if (window.innerWidth > 1000) {
         $('.wordMap button').off().on('mouseenter', function() {

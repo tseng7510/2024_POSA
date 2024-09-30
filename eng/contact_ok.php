@@ -102,6 +102,11 @@
     <?php include('include_footer.php'); ?>
   </div>
   <?php include('include_body_bottom.php'); ?>
+  <script>
+    $(function() {
+      $('.mainMenu > ul > li').eq(6).addClass('nowPage');
+    })
+  </script>
 </body>
 
 </html>

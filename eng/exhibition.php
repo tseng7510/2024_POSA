@@ -103,7 +103,7 @@
   <script>
     $(function() {
       $('.navBox li').eq(1).addClass('active');
-      $('.mainMenu > ul > li').eq(2).addClass('active');
+      $('.mainMenu > ul > li').eq(2).addClass('nowPage');
     })
   </script>
 </body>

@@ -75,7 +75,7 @@
               </div>
               <div class="listBox">
 
-                <? for ($i = 0; $i < 3; $i++) { ?>
+                <? for ($i = 0; $i < 5; $i++) { ?>
                   <div class="item wow fadeInUp" data-wow-delay="0s" data-type="News">
                     <a href="products_detail.php">
                       <div class="picBox">
@@ -107,7 +107,7 @@
   <?php include('include_body_bottom.php'); ?>
 
   <script>
-    $('.mainMenu > ul > li').eq(0).addClass('active');
+    $('.mainMenu > ul > li').eq(0).addClass('nowPage');
   </script>
 </body>
 

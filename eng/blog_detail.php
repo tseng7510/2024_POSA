@@ -92,7 +92,7 @@
   <script>
     $(function() {
       $('.navBox li').eq(3).addClass('active');
-      $('.mainMenu > ul > li').eq(2).addClass('active');
+      $('.mainMenu > ul > li').eq(2).addClass('nowPage');
     })
   </script>
 </body>

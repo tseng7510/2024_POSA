@@ -81,7 +81,7 @@
   <?php include('include_body_bottom.php'); ?>
   <script>
     $(function() {
-      $('.mainMenu > ul > li').eq(5).addClass('active');
+      $('.mainMenu > ul > li').eq(5).addClass('nowPage');
 
       $('.catalog .contentBox .listBox').slick({
         slidesToShow: 3,

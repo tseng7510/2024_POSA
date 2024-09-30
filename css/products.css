@@ -677,6 +677,7 @@
 }
 .productsList3 .listBox {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
 }
 @media screen and (max-width: 767px) {

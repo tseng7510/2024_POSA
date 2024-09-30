@@ -4,13 +4,13 @@
   z-index: 2;
 }
 .bg::after {
-  content: "";
+  content: '';
   transform: translate(50%, -50%);
   top: 0;
   right: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 80vw;
   aspect-ratio: 1;
@@ -19,13 +19,13 @@
   /*animation: pulsate2 3s linear infinite;*/
 }
 .bg::before {
-  content: "";
+  content: '';
   transform: translate(50%, -50%);
   top: 0;
   right: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 50vw;
   aspect-ratio: 1;
@@ -33,31 +33,31 @@
   border-radius: 50%;
 }
 
-.bg .dot{
+.bg .dot {
   position: absolute;
   inset: 0;
 }
 .bg .dot::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 40px;
   height: 40px;
-  background: #1FA7F1;
+  background: #1fa7f1;
   transform: translate(50%, -50%);
   border-radius: 50%;
   filter: blur(10px);
 }
 
 .bg .dot::after {
-  content: "";
+  content: '';
   transform: translate(50%, -50%);
   top: 0;
   right: 0;
   display: block;
   position: absolute;
-  background: #1FA7F1;
+  background: #1fa7f1;
   opacity: 0.1;
   width: 20vw;
   aspect-ratio: 1;
@@ -85,7 +85,7 @@
 .contact .container .listBox .item a {
   display: flex;
   gap: 20px;
-  border: #5052AD 1px solid;
+  border: #5052ad 1px solid;
 }
 @media screen and (max-width: 1000px) {
   .contact .container .listBox .item a {
@@ -97,8 +97,8 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #262C78;
-  color: #FFF;
+  background: #262c78;
+  color: #fff;
   font-weight: 700;
 }
 .contact .container .listBox .item .pic {
@@ -120,7 +120,7 @@
 }
 .contact .container .listBox .item .subTitle {
   font-size: 0.875rem;
-  color: #262C78;
+  color: #262c78;
   font-weight: 700;
 }
 .contact .container .listBox .item .title {
@@ -140,7 +140,7 @@
 }
 .contact .container .listBox .item .del {
   width: 76px;
-  border: #262C78 1px solid;
+  border: #262c78 1px solid;
   aspect-ratio: 1;
   align-self: center;
   border-radius: 50%;
@@ -153,14 +153,15 @@
     margin: 30px auto;
   }
 }
-.contact .container .listBox .item .del::before, .contact .container .listBox .item .del::after {
-  content: "";
+.contact .container .listBox .item .del::before,
+.contact .container .listBox .item .del::after {
+  content: '';
   display: block;
   position: absolute;
   height: 3px;
   width: 25px;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #262C78;
+  background: #262c78;
   top: 50%;
   left: 50%;
   transition: all 0.3s ease;
@@ -169,10 +170,11 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 .contact .container .listBox .item .del:hover {
-  background: #262C78;
+  background: #262c78;
 }
-.contact .container .listBox .item .del:hover::before, .contact .container .listBox .item .del:hover::after {
-  background: #FFF;
+.contact .container .listBox .item .del:hover::before,
+.contact .container .listBox .item .del:hover::after {
+  background: #fff;
 }
 .contact .contentBox {
   position: relative;
@@ -180,7 +182,7 @@
   isolation: isolate;
 }
 .contact .contentBox::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 8px;
   top: 0;
@@ -196,11 +198,11 @@
   left: -20px;
   right: -20px;
   -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
-          mask: linear-gradient(to bottom, #000 50%, transparent);
+  mask: linear-gradient(to bottom, #000 50%, transparent);
   z-index: -1;
 }
 .contact .contentBox .contentBg::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   inset: 0 20px;
@@ -232,7 +234,7 @@
 }
 .contact .bottomBox .infoBox {
   width: 50%;
-  background: url("../images/in/contact_bg.jpg") center bottom no-repeat;
+  background: url('../images/in/contact_bg.jpg') center bottom no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -254,7 +256,7 @@
   }
 }
 .contact .bottomBox .infoBox .title {
-  color: #FFF;
+  color: #fff;
   font-size: 3.125rem;
   font-weight: 800;
   line-height: 1.2;
@@ -285,7 +287,7 @@
 }
 .contact .bottomBox .infoBox ul li {
   font-size: 1.125rem;
-  color: #FFF;
+  color: #fff;
   display: flex;
 }
 .contact .bottomBox .infoBox ul li span {
@@ -295,7 +297,7 @@
   font-weight: 700;
 }
 .contact .bottomBox .infoBox ul li a {
-  color: #FFF;
+  color: #fff;
 }
 .contact .bottomBox .map {
   width: 50%;
@@ -311,10 +313,10 @@
   height: 100%;
 }
 
-.contactOk {
+.contactOk .siteMain {
   text-align: center;
 }
-.contactOk .title {
+.contactOk .siteMain .title {
   max-width: 570px;
   margin: 0 auto;
   line-height: 1.2;
@@ -323,17 +325,17 @@
   padding-bottom: 30px;
 }
 @media screen and (max-width: 1000px) {
-  .contactOk .title {
+  .contactOk .siteMain .title {
     font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .contactOk .title {
+  .contactOk .siteMain .title {
     font-size: 1.5rem;
   }
 }
-.contactOk .unitTitleBox .title::before {
-  content: "";
+.contactOk .siteMain .unitTitleBox .title::before {
+  content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -341,30 +343,30 @@
   height: 5px;
   transform: translateX(-50%);
   display: block;
-  background: #FF290B;
+  background: #ff290b;
 }
-.contactOk .txt {
+.contactOk .siteMain .txt {
   color: #333333;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 1000px) {
-  .contactOk .txt {
+  .contactOk .siteMain .txt {
     font-size: 1rem;
   }
 }
-.contactOk .subTitle {
-  color: #262C78;
+.contactOk .siteMain .subTitle {
+  color: #262c78;
   font-weight: 700;
   font-size: 1.75rem;
   margin-bottom: clamp(20px, 5%, 50px);
 }
 @media screen and (max-width: 1000px) {
-  .contactOk .subTitle {
+  .contactOk .siteMain .subTitle {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .contactOk .subTitle {
+  .contactOk .siteMain .subTitle {
     font-size: 1.25rem;
   }
-}/*# sourceMappingURL=contact.css.map */
+} /*# sourceMappingURL=contact.css.map */

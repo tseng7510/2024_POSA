@@ -73,6 +73,7 @@
               <div class="editor wow fadeInUp" data-wow-delay="0.2s">
                 <div class="editorBg"></div>
                 Venue : Taipei Nangang Exhibition Hall 1 Booth no. : K0116 Date : March 27 to 31, 2024Venue : Taipei Nangang Exhibition Hall 1 Booth no. : K0116 Date : March 27 to 31, 2024Venue : Taipei Nangang Exhibition Hall 1 Booth no. : K0116 Date : March 27 to 31, 2024Venue : Taipei Nangang Exhibition Hall 1 Booth no. : K0116 Date : March 27 to 31, 2024
+                <a href="#">test</a>
                 <br /><br /><br />
                 <img src="../images/in/n2.jpg" alt="">
               </div>
@@ -93,7 +94,7 @@
   <script>
     $(function() {
       $('.navBox li').eq(0).addClass('active');
-      $('.mainMenu > ul > li').eq(2).addClass('active');
+      $('.mainMenu > ul > li').eq(2).addClass('nowPage');
     })
   </script>
 </body>

@@ -52,7 +52,9 @@
                   </div>
                   <h1 class="title wow fadeInUp" data-wow-delay="0s">Turning and Milling Centers</h1>
                 </div>
-                <div style="display:none"><div class="subTitle wow fadeInUp" data-wow-delay="0.2s">Product Description</div></div>
+                <div style="display:none">
+                  <div class="subTitle wow fadeInUp" data-wow-delay="0.2s">Product Description</div>
+                </div>
                 <div class="description wow fadeInUp" data-wow-delay="0.4s">POSA MACHINERY CO., LTD. offers Turning and Milling Centers with high-precision spindles, robust construction, and advanced CNC control systems. These centers can perform both turning and milling in a single setup, suitable for various materials, featuring efficient chip management and customization options, making them ideal for aerospace, automotive, and precision engineering industries.</div>
               </div>
               <div class="listBox">
@@ -97,7 +99,7 @@
   </div>
   <?php include('include_body_bottom.php'); ?>
   <script>
-    $('.mainMenu > ul > li').eq(0).addClass('active');
+    $('.mainMenu > ul > li').eq(0).addClass('nowPage');
   </script>
 </body>
 

@@ -154,10 +154,13 @@
   <?php include('include_body_bottom.php'); ?>
 
   <script>
-    $('.block01 .listBox').magnificPopup({
-      delegate: 'a',
-      type: 'image'
-    });
+    $(function() {
+      $('.block01 .listBox').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+      $('.mainMenu > ul > li').eq(3).addClass('nowPage');
+    })
   </script>
 </body>
 
